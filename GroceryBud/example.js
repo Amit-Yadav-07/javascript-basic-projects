@@ -125,7 +125,7 @@ function editItem(e) {
     //
     submitBtn.textContent = "edit";
 }
-// set backt to defaults
+// set back to defaults
 function setBackToDefault() {
     grocery.value = "";
     editFlag = false;
