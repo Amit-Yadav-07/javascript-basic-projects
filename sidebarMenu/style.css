@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: right;
+  position: relative;
+  height: auto;
+}
+
+button {
+  border: none;
+  font-size: 2rem;
+  /* margin: 2rem; */
+  background-color: blueviolet;
+  padding: 5px;
+  cursor: pointer;
+  margin: 2rem;
+  animation: blink 2s infinite;
+  transition: all 0.5s linear;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.aside {
+  background-color: yellowgreen;
+  width: 40%;
+  height: 100vh;
+  transform: translateX(-100%);
+  position: absolute;
+  top: 0%;
+  transition: all 0.3s linear;
+  z-index: 10;
+}
+
+.show-sidebar {
+  transform: translate(0%);
+}
+
+h2 {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.fa-xmark {
+  margin-right: 2rem;
+  color: red;
+  font-size: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.fa-xmark:hover {
+  transform: rotate(190deg);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.links li {
+  padding: 20px 0px;
+  list-style-type: none;
+  margin-left: 2rem;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #231e1e;
+  font-size: 1.4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.links li a:hover {
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+}
+
+.all-icons {
+  background-color: blueviolet;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+}
+
+.all-icons a i {
+  margin: 0px 20px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .aside {
+    background-color: yellowgreen;
+    width: 100%;
+  }
+}

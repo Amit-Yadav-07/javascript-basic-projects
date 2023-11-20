@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.reset:hover {
+  background-color: black;
+  transition: all 0.2s linear;
+  color: #fff;
+}
+
+.decrement:hover {
+  background-color: black;
+  transition: all 0.2s linear;
+  color: #fff;
+}
+
+.increase:hover {
+  background-color: black;
+  transition: all 0.2s linear;
+  color: #fff;
+}
+
+h1,
+span {
+  font-size: 60px;
+  font-family: monospace;
+  font-weight: bold;
+}
